@@ -40,13 +40,9 @@ class ViewController: UIViewController {
         
         if sender.currentImage == UIImage(systemName: "eye") {
             sender.setImage(UIImage(systemName: "eye.fill"), for: .normal)
-            
         }else{
             sender.setImage(UIImage(systemName: "eye"), for: .normal)
-            
         }
-       
-    
     }
     
     
@@ -55,11 +51,9 @@ class ViewController: UIViewController {
     @IBAction func facebookButton(_ sender: UIButton) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
         let searchVC = storyBoard.instantiateViewController(withIdentifier: "searchViewController") as! SearchViewController
         
-        searchVC.querry = "New Swift 5 features"; //  the query to be sent to server 
-        
+        searchVC.querry = "New Swift 5 features"; //  the query to be sent to server
         self.present(searchVC, animated: true, completion: nil)
     }
     

@@ -7,12 +7,26 @@
 
 import UIKit
 
-class SearchResultsVC: UIViewController {
+// Post Model could be here
 
+
+class SearchResultsVC: UIViewController {
+    
+  
+
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellHeadLine: UITextView!
+    
+    
+
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // initialization...
         
         print("Subviews for cell \(1)")
     }

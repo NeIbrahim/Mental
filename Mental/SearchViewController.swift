@@ -14,8 +14,10 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        print("My Querry is: \(querry!) " )
+        if let result = querry {
+            print("My Querry is: \(result) " )
+
+        }
         // Do any additional setup after loading the view.
     }
     
